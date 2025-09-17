@@ -1,6 +1,6 @@
 ## **Namaste React** course video description    
 
-|   Video  |    Directary   |
+|   Video  |    Directory   |
 |:---------|:---------------|
 |`video 1` |react0          |
 |`video 2` |react1_jsx      |
