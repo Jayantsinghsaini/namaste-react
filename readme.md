@@ -1,7 +1,9 @@
 ## **Namaste React** course video description    
 
-|   Video  |    Directory   |
-|:---------|:---------------|
-|`video 1` |react0          |
-|`video 2` |react1_jsx      |
-|`video 3` |react2_component|
+|   Video  |    Directory   |    Topics   |
+|:---------|:---------------|:---------------|
+|`video 1` |react0          |introduction|
+|`video 2` |react1_jsx      |jsx|
+|`video 3` |react2_component|components|
+|`video 4` |react3_props    |props|
+|`video 5` |react4_hooks-and-more|useState, virtual dom, reconciliation algo(react fiber), diff algo |
