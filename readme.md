@@ -8,4 +8,5 @@
 |`video 4` |react3_props    |props|
 |`video 5` |react4_hooks-and-more|useState, virtual dom, reconciliation algo(react fiber), diff algo |
 |`video 6` |react5_useEffect-and-more|useEffect, onChange , more about hooks |
-|`video 7` |react5_react-router|react router, nested routes, dynamic routes, Link component, useRouteError hook|
+|`video 7` |react6_react-router|react router, nested routes, dynamic routes, Link component, useRouteError hook|
+|`video 8` |react6_class-component|class component, react lifecycle method diagram|
