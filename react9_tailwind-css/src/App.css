@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+/* tailwind.css or global.css */
+@layer components {
+  .child-box {
+    @apply p-1 bg-red-300 border-2 border-red-600 rounded-lg w-max text-center;
+  }
+}
