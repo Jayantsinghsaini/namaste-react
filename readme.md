@@ -12,3 +12,4 @@
 |`video 8` |react7_class-component|class component, react lifecycle method diagram|
 |`video 9` |react8_custom-hooks|custom hooks, optimization technique - lazy loading|
 |`video 10`|react9_tailwind|tailwind css config and basic styling classes|
+|`video 11`|react10_context-api|higher order component, controlled and uncontrolled component, lifting the state up, context api|
