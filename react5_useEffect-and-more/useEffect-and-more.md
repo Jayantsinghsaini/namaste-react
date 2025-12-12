@@ -23,6 +23,62 @@ useEffect(() => {
 
 * If a variable in the array changes, the effect runs again.
 
+## **1.1 Cleanup (return statement inside useEffect)**
+
+Some effects need **cleanup** to avoid memory leaks or duplicate subscriptions.
+React allows you to return a cleanup function from useEffect:
+
+```jsx
+useEffect(() => {
+  console.log("Effect started");
+
+  return () => {
+    console.log("Cleanup before effect re-runs or component unmounts");
+  };
+}, [dependencies]);
+```
+
+### When the cleanup runs:
+
+| Situation                                               | Cleanup Runs? |
+| ------------------------------------------------------- | ------------- |
+| Before the effect runs again (when dependencies change) | ✅ Yes         |
+| When the component unmounts                             | ✅ Yes         |
+| On first render                                         | ❌ No          |
+
+### Example: removing an event listener
+
+```jsx
+useEffect(() => {
+  const handleScroll = () => {
+    console.log("Scrolling...");
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll); // cleanup
+  };
+}, []);
+```
+
+### Example: clearing a timer
+
+```jsx
+useEffect(() => {
+  const id = setInterval(() => {
+    console.log("Tick");
+  }, 1000);
+
+  return () => clearInterval(id); // cleanup
+}, []);
+```
+
+**Why cleanup is important:**
+Without cleanup, you may attach multiple listeners or create multiple timers after every re-render — causing performance issues or bugs.
+
+---
+
 ## 2. Dependency Array Behavior
 
 The dependency array tells React when to run your effect:
